@@ -1,12 +1,12 @@
 /* ============= TOGGLE ICON NAVBAR ============ */
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.querySelector(".navbar");
 
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
-
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle("fa-xmark");
-  navbar.classList.toggle("active");
-};
+  menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active"); // Toggle 'active' class
+  });
+});
 
 /* ============= SCROLL SECTION ACTIVE LINK ============ */
 
